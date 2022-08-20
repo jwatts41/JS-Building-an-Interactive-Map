@@ -16,7 +16,14 @@ const marker = L.marker([48.87007, 2.346453])
 marker.addTo(myMap).bindPopup('<p1><b>The Hoxton, Paris</b></p1>').openPopup()
 
 
-// draw the 2nd arrondissement
+// draw the 2nd arrondissement                                         
+const latlngs = [[48.863368120198004, 2.3509079846928516],[48.86933262048345, 2.3542531602919805],[48.87199261164275, 2.3400569901592183],[48.86993336274516, 2.3280142476578813], [48.86834104280146, 2.330308418109664]]
+
+const polygon = L.polygon(latlngs, {
+    color: 'blue', 
+    fillOpacity: 0.0
+}).addTo(myMap)
+
 
 
 // create red pin marker
